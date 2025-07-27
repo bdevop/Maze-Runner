@@ -1,0 +1,12 @@
+node_modules/
+dist/
+build/
+*.js.map
+*.tsbuildinfo
+.env
+.vscode/
+*.swp
+logs/
+*.log
+tmp/
+temp/
