@@ -1,0 +1,13 @@
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: maze-runner
+  labels:
+    app.kubernetes.io/name: maze-runner
+    app.kubernetes.io/part-of: maze-runner-project
+    kubernetes.azure.com/generator: devhub
+spec:
+  maxUnavailable: 1
+  selector:
+    matchLabels:
+      app: maze-runner
