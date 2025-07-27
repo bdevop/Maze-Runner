@@ -1,10 +1,12 @@
 {
-  "name": "Maze-Runner",
+  "name": "maze-runner",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "serve": "live-server --no-browser",
+    "dev": "concurrently \"pnpm run watch\" \"pnpm run serve\""
   },
   "keywords": [],
   "author": "",
@@ -15,10 +17,16 @@
     "live-server": "^1.2.2",
     "typescript": "^5.8.3"
   },
-  "scripts": {
-    "build": "tsc",
-    "watch": "tsc --watch",
-    "serve": "live-server --no-browser",
-    "dev": "concurrently \"pnpm run watch\" \"pnpm run serve\""
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdevop/Maze-Runner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bdevop/Maze-Runner/issues"
+  },
+  "homepage": "https://github.com/bdevop/Maze-Runner#readme",
+  "description": "",
+  "dependencies": {
+    "packages.json": "^0.0.1-security"
   }
 }

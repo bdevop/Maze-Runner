@@ -10,6 +10,8 @@ let x = c.width / 2
     //interval the ball will move 
     let dx = 2;
     let dy = -2;
+
+
 function draw(){
     console.log(x)
     ctx.beginPath();
