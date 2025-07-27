@@ -1,7 +1,9 @@
+// This is the canvas
 const c = document.getElementById("gamecanvas") as HTMLCanvasElement;
+
+// This is the tool used to paint on the canvas
 const ctx = c.getContext("2d") as CanvasRenderingContext2D;
 
-// Red Square :) 
 let x = c.width / 2;
 let y = c.height - 30;
 
