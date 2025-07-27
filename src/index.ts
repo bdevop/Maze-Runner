@@ -5,8 +5,8 @@ const c = document.getElementById("gamecanvas") as HTMLCanvasElement;
 const ctx = c.getContext("2d") as CanvasRenderingContext2D;
 
 let player = { 
-    x: 1,
-    y: 350,
+    x: 1
+    y: 350
     width: 50, 
     height: 50,
     speed: 5,
@@ -25,7 +25,7 @@ function movePlayer() {
 
 function gameLoop() { 
 drawPlayer()
-}
+
 requestAnimationFrame(gameLoop);
 
 
