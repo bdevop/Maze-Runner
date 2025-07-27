@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: maze-runner-config
+  namespace: maze-runner
+  labels:
+    app.kubernetes.io/name: maze-runner
+    kubernetes.azure.com/generator: devhub
+data:
